@@ -103,7 +103,7 @@ public class CursoRestController {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
 		} catch (OperacaoNaoPermitida e) {
 			logger.error(e.getMessage(), e);
-			throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Não é possível excluír o registro.");
+			throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Não é possível excluír o registro. Existe aluno matriculado neste curso.");
 		} catch (Exception e) {
 			logger.error(e.getMessage(), e);
 			throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Erro interno");
