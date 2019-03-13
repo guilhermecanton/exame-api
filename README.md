@@ -1,4 +1,3 @@
-# Processo seletivo - Desenvolvedor Java Full Stack
 
 Premissas
 * JDK 8 instalada
