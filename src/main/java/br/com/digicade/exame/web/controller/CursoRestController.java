@@ -67,6 +67,11 @@ public class CursoRestController {
 		return cursoService.buscarTodos(page, size);
 	}
 	
+	@GetMapping("/teste")
+	public String buscar() {
+		return "I love Heroku";
+	}
+	
 	/**
 	 * Endpoint utilizado para 
 	 * persistir um novo registro
